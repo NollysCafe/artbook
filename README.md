@@ -1,7 +1,7 @@
 # 🎨 ArtBook
 
-![NFE-OSL License](https://img.shields.io/github/license/nollycafe/artbook)
-![Stars](https://img.shields.io/github/stars/nollycafe/artbook?style=social)
+![NFE-OSL License](https://img.shields.io/github/license/nollyscafe/artbook)
+![Stars](https://img.shields.io/github/stars/nollyscafe/artbook?style=social)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
 ![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)
 ![Built with Love](https://img.shields.io/badge/built%20with-love-ff69b4.svg)
@@ -50,7 +50,7 @@ A **modern, open-source portfolio & link-sharing platform** built specifically f
 - **Security**: Cloudflare + API rate limiting
 - **Deployment**: Self-hosted
 
-> Uses [`nolly-cli`](https://github.com/nollycafe/nolly-cli) under the hood.
+> Uses [`nolly-cli`](https://github.com/nollyscafe/nolly-cli) under the hood.
 
 ---
 
@@ -58,7 +58,7 @@ A **modern, open-source portfolio & link-sharing platform** built specifically f
 
 1. **Clone the repo**
    ```sh
-   git clone https://github.com/nollycafe/artbook.git
+   git clone https://github.com/nollyscafe/artbook.git
    cd artbook
 	 ```
 2. **Install dependencies**
