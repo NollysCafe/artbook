@@ -1,0 +1,20 @@
+name: "Stale bot"
+on:
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          stale-issue-message: "👋 This issue has been quiet for a while. Feel free to comment to keep it open!"
+          stale-pr-message: "👋 This pull request is stale. If you're still working on it, leave a comment!"
+          days-before-stale: 30
+          days-before-close: 7
+          exempt-issue-labels: "discussion,roadmap,design-needed"
+          exempt-pr-labels: "work-in-progress"
+          close-issue-message: "⚠️ Closing due to inactivity. Reopen if needed!"
+          close-pr-message: "⚠️ Closing due to inactivity. Reopen or ping if you want to continue!"
