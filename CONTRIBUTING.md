@@ -40,7 +40,7 @@ Whether you're fixing a typo, suggesting a new feature, or building out entire p
 - Use **neutral pronouns**, clear and respectful language.
 - Avoid large unrelated changes in one PR.
 - If you're fixing a bug, please link the relevant issue or describe how to reproduce it.
-- Want to propose a feature? Open a [discussion](https://github.com/nollycafe/artbook/discussions) first if you're unsure.
+- Want to propose a feature? Open a [discussion](https://github.com/nollyscafe/artbook/discussions) first if you're unsure.
 
 ---
 

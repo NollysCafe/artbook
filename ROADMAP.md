@@ -59,9 +59,9 @@ ArtBook is growing fast. Our vision is to become the most powerful, open-source 
 
 ## 🤝 Want to Help?
 
-Check out [CONTRIBUTING.md](./CONTRIBUTING.md) to get started, or browse open [issues](https://github.com/nollycafe/artbook/issues).
+Check out [CONTRIBUTING.md](./CONTRIBUTING.md) to get started, or browse open [issues](https://github.com/nollyscafe/artbook/issues).
 
-You can also suggest features or improvements by opening a [GitHub Discussion](https://github.com/nollycafe/artbook/discussions).
+You can also suggest features or improvements by opening a [GitHub Discussion](https://github.com/nollyscafe/artbook/discussions).
 
 Let’s build something beautiful together.
 — _Nolly’s Cafe ☕ | [artbook.thenolle.com](https://artbook.thenolle.com)_
