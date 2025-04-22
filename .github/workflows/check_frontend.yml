@@ -1,0 +1,31 @@
+name: Check Frontend
+
+on:
+  push:
+    paths:
+      - 'frontend/**'
+    branches:
+      - master
+  pull_request:
+    paths:
+      - 'frontend/**'
+    branches:
+      - master
+
+jobs:
+  check-frontend:
+    name: Check Frontend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install dependencies
+        run: pnpm install
+      - name: Start dev server (verify Vite starts)
+        run: |
+          timeout 15 pnpm dev | grep -q 'Vite v' && echo '✅ Frontend Vite dev server started' || (echo '❌ Vite failed'; exit 1)

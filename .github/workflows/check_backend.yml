@@ -1,0 +1,33 @@
+name: Check Backend
+
+on:
+  push:
+    paths:
+      - 'backend/**'
+    branches:
+      - master
+  pull_request:
+    paths:
+      - 'backend/**'
+    branches:
+      - master
+
+jobs:
+  check-backend:
+    name: Check Backend
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install dependencies
+        run: pnpm install
+      - name: Start dev server (verify backend starts)
+        run: |
+          timeout 15 pnpm dev | tee server.log &
+          sleep 10
+          grep -q '\[Main\] server running at' server.log && echo '✅ Backend server running' || (echo '❌ Server failed'; exit 1)
