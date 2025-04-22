@@ -11,6 +11,7 @@ on:
       - 'frontend/**'
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   check-frontend:

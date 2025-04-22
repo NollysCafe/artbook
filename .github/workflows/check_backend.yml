@@ -11,6 +11,7 @@ on:
       - 'backend/**'
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   check-backend:
