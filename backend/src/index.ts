@@ -12,6 +12,9 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 
+import { loadRoutesFrom } from './utils/loadRoutes'
+import path from 'path'
+
 
 // Create App instance
 const app = new App()
@@ -25,7 +28,8 @@ app.addMiddleware(helmet())
 app.addMiddleware(morgan('dev'))
 
 // ROUTES
-
+const routes = loadRoutesFrom(path.resolve(__dirname, 'routes'))
+routes.forEach(({ path, router }) => app.addRoute(path, router))
 
 // Start server
 app.start(config.backendPort, async () => {
