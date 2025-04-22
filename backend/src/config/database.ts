@@ -16,7 +16,7 @@ export class Database {
 			ssl: false,
 			max: 10,
 			idleTimeoutMillis: 30_000,
-			connectionTimeoutMillis: 5_000,
+			connectionTimeoutMillis: 10_000,
 		})
 
 		this._bindEvents()
